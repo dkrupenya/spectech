@@ -12,9 +12,12 @@ var gulp = require('gulp'),
 //    cssmin = require('gulp-minify-css'),
 //    imagemin = require('gulp-imagemin'),
 //    pngquant = require('imagemin-pngquant'),
-//    rimraf = require('rimraf'),
+    rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
+
+//подключаем gilp-grunt
+require('gulp-grunt')(gulp);
 
 //создадим js объект в который пропишем все нужные нам пути, чтобы при необходимости легко в одном месте их редактировать:
 
@@ -40,7 +43,7 @@ var path = {
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-    clean: './build'
+    clean: './build/*'
 };     
 
 //Создадим переменную с настройками нашего dev сервера:
@@ -150,8 +153,7 @@ gulp.task('webserver', function () {
 //и потом картинку удалите — она останется в папке build. Так что было бы удобно периодически подчищать ее.
 
 gulp.task('clean', function (cb) {
-// пакет rimraf не установлен 
-//   rimraf(path.clean, cb);
+   rimraf(path.clean, cb);
 });
 
 //Последним делом — мы определим дефолтный таск, который будет запускать всю нашу сборку.
