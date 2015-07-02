@@ -1,0 +1,16 @@
+{
+  "name": "spectech",
+  "version": "0.0.1",
+  "description": "project for Epic Skills",
+  "authors": [
+    "Dmitry Krupenya"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
