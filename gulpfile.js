@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 //    imagemin = require('gulp-imagemin'),
 //    pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-    browserSync = require("browser-sync"),
+    browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
 //подключаем gilp-grunt
@@ -46,7 +46,7 @@ var path = {
     clean: './build/*'
 };     
 
-//Создадим переменную с настройками нашего dev сервера:
+//Создадим переменную с настройками нашего dev сервера для BrowserSync:
 
 var config = {
     server: {
@@ -63,8 +63,8 @@ var config = {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)); //Выплюнем их в папку build
-//        .pipe(reload({stream: true})); И перезагрузим наш сервер для обновлений
+        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
+        .pipe(reload({stream: true})); // И перезагрузим наш сервер для обновлений
 });
 
 //таск для сборки js:
@@ -76,7 +76,7 @@ gulp.task('js:build', function () {
 //        .pipe(uglify()) //Сожмем наш js
 //        .pipe(sourcemaps.write()) //Пропишем карты
 //        .pipe(gulp.dest(path.build.js)); //Выплюнем готовый файл в build
-//        .pipe(reload({stream: true})); //И перезагрузим сервер
+        .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 //таск для сборки css:
@@ -88,8 +88,8 @@ gulp.task('style:build', function () {
 //        .pipe(prefixer()) //Добавим вендорные префиксы
 //        .pipe(cssmin()) //Сожмем
 //        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.css)); //И в build
-//        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(reload({stream: true}));
 });
 
 //таск для сборки картинок:
@@ -102,8 +102,8 @@ gulp.task('image:build', function () {
 //            use: [pngquant()],
 //            interlaced: true
 //        }))
-        .pipe(gulp.dest(path.build.img)); //И бросим в build
-//        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.img)) //И бросим в build
+        .pipe(reload({stream: true}));
 });
 
 //таск для сборки шрифтов:
@@ -160,5 +160,5 @@ gulp.task('clean', function (cb) {
 //Теперь выполним в консоли gulp И вуаля
 
 //gulp.task('default', ['build', 'webserver', 'watch']);
-gulp.task('default', ['build']);
+gulp.task('default', ['build', 'webserver', 'watch']);
 
