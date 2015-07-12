@@ -5,17 +5,8 @@
     <!-- Page header -->
     @@include('blocks/header.html')
     <hr class="hr-striped"/>
-    <section class="banner">
-        <div class="container">
-            <div class="banner__left">
-                <h2>Каталог техники</h2>
-                <p class="banner_h2-motto">Все, что нужно</p>
-            </div>
-            <div class="banner__right">
-                <a class="banner__button" href="">Мне нужна консультация</a>
-            </div>
-        </div>
-    </section>
+    @@include('blocks/banner.html', {"header": "Каталог техники",
+                                    "motto": "Все, что нужно"})
     <section class="tech-types">
         <div class="container">
             <div class="tech-types__item">
