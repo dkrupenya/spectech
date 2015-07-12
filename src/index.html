@@ -10,133 +10,150 @@
 <body>
     //= _block_header.html
     <hr class="hr-striped"/>
-    <!-- Section 1 Вместе мы справимся!-->
+    <!-- Section 1  banner Вместе мы справимся!-->
     <section class="promo">
-        <p class="promo__header"></p>
+        <div class="container">
+            <p class="promo__header">ВМЕСТЕ МЫ СПРАВИМСЯ!</p>
+            <p class="promo__text">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
+            <a class="promo__link" href="">Перейти в каталог</a>
+        </div>
+    </section>
+    <hr class="hr-striped"/>
 
-        <p class="promo__text"></p>
-        <a class="promo__link" href=""></a>
-
-        <form class="promo__form" action="">
-            <h2 class="promo__h2"></h2>
-            <input type="text" name="name"/>
-            <input type="text" name="phone"/>
-            <input type="text" name="email"/>
-            <button></button>
-        </form>
+    <section class="consult-form">
+        <div class="container">
+            <form class="promo__form" action="">
+                <legend class="promo__legend">Закажите бесплатную консультацию по подбору подходящей техники</legend>
+                <input type="text" name="name"  placeholder="Как вас зовут?" />
+                <input type="text" name="phone" placeholder="Номер для связи"/>
+                <input type="text" name="task"  placeholder="Выберите задачу"/>
+                <button id="consultation">Заказать консультацию</button>
+            </form>
+        </div>
     </section>
     <!-- Section 2 Техника проходит обязательное обслуживание-->
-    <section class="about-tech">
-        <p></p>
+    <section class="perks">
+        <div class="container">
+            <p>Техника проходит обязательное обслуживание перед каждым выездом</p>
 
-        <p></p>
+            <p>Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
 
-        <p></p>
+            <p>Привезем модные строительные ограждения к каждому заказу от 20 000</p>
 
-        <p></p>
+            <p>С техникой приедут квалифицированные операторы и водители</p>
+        </div>
     </section>
     <!-- Section 3 Спецпредложения-->
     <section class="offers">
-        <div class="offers__all">
-            <h2></h2>
-            <nav>
+        <div class="container">
+            <div class="offers__all">
+                <h2>Вся техника</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Гусеничные экскаваторы</a></li>
+                        <li><a href="">Колёсные экскаваторы</a></li>
+                        <li><a href="">Мини-экскаваторы</a></li>
+                        <li><a href="">Автокраны</a></li>
+                        <li><a href="">Фронтальные погрузчики</a></li>
+                        <li><a href="">Навесное оборудование</a></li>
+                        <li><a href="">Дизельгенераторы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="offers__spec">
+                <h2>Спецпредложение</h2>
+                <table>
+                    <tr>
+                        <th>Позиция для аренды</th>
+                        <th>За смену</th>
+                        <th>За неделю</th>
+                        <th>За месяц</th>
+                    </tr>
+                    <tr>
+                        <td>Мини-экскаватор CAT</td>
+                        <td>5 000</td>
+                        <td>25 000</td>
+                        <td>60 000</td>
+                    </tr>
+                    <tr>
+                        <td>Экскаватор VOLVO</td>
+                        <td>3 000</td>
+                        <td>15 000</td>
+                        <td>40 000</td>
+                    </tr>
+                    <tr>
+                        <td>Грузовик VOLVO</td>
+                        <td>5 000</td>
+                        <td>25 000</td>
+                        <td>60 000</td>
+                    </tr>
+                    <tr>
+                        <td>Мини-экскватор CAT</td>
+                        <td>3 000</td>
+                        <td>15 000</td>
+                        <td>40 000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <hr class="hr-striped"/>
+    <!-- Section 4 Спецтех в цифрах-->
+    <section class="info">
+        <div class="container">
+            <div class="info__numbers">
+                <h2 class="info__header"><b>Спецтех </b>в цифрах</h2>
+                <p><span class="info__span">16 </span>Лет работы</p>
+                <p><span class="info__span">715 </span>Довольных клиентов</p>
+                <p><span class="info__span">108 </span>Единиц техники</p>
+                <p><span class="info__span">500+ </span>Довольных клиентов</p>
+            </div>
+            <div class="info__words">
+                <h2 class="info__header"><b>Нас рекомендуют клиенты</b></h2>
+                <div class="info__citation">
+                    <img src="img/main-words-woman.jpg" alt=""/>
+                    <blockquote>Спецтех24 – это надежные партнеры нашей компании,
+                        которые всегда выполняют работу быстро и еще у них отличное
+                        чувство юмора! Благодарим и рекомендуем.
+                    </blockquote>
+                    <cite>Оля Вольт, Реал-Строй</cite>
+                </div>
+                <div class="info__citation">
+                    <img src="img/main-words-man.jpg" alt=""/>
+                    <blockquote>Все виды работ, предусмотренные договором, компания
+                        выполнила на высоком профессиональном уровне, качественно,
+                        в срок, в соответствии с требованиями. ООО «ТНН» рекомендует
+                    </blockquote>
+                    <cite>Григорий Безымянных, ТНН</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="hr-striped"/>
+    <!-- Section 5 Карта-->
+    <section class="map">
+        <img src="img/main-sample-map.jpg" alt=""/>
+    </section>
+    <hr class="hr-striped"/>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer__logo">
+                <a href="/">
+                    <img src="img/main-icon-truck.svg" alt="Логотип Спецтех24"/>
+                    <h1><b>Спецтех</b>24</h1>
+                </a>
+            </div>
+            <nav class="page-footer__nav">
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li class="page-footer__item"><a href="">О компании</a></li>
+                    <li class="page-footer__item"><a href="">Услуги</a></li>
+                    <li class="page-footer__item"><a href="">Портофолио</a></li>
+                    <li class="page-footer__item"><a href="">Контакты</a></li>
+                    <li class="page-footer__item page-footer__item--button"><a href="">Заказать звонок</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="offers__spec">
-            <table>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <!-- Section 4 Спецтех в цифрах-->
-    <section class="info">
-        <div class="info__numbers">
-            <h2><b></b></h2>
-
-            <p><span class="info__span"></span></p>
-
-            <p><span class="info__span"></span></p>
-
-            <p><span class="info__span"></span></p>
-
-            <p><span class="info__span"></span></p>
-        </div>
-        <div class="info__recoms">
-            <div><img src="" alt=""/>
-                <blockquote></blockquote>
-                <cite></cite></div>
-            <div><img src="" alt=""/>
-                <blockquote></blockquote>
-                <cite></cite></div>
-            <div><img src="" alt=""/>
-                <blockquote></blockquote>
-                <cite></cite></div>
-            <div><img src="" alt=""/>
-                <blockquote></blockquote>
-                <cite></cite></div>
-        </div>
-    </section>
-    <!-- Section 5 Карта-->
-    <section class="map">
-
-    </section>
-    <!-- Footer -->
-    <footer class="page-footer">
-        <a href=""><img src="" alt=""></a>
-        <h2><b></b></h2>
-        <nav class="page-footer__nav">
-            <ul>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-            </ul>
-        </nav>
     </footer>
 </body>
 </html>
