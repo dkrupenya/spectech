@@ -15,6 +15,7 @@ body {
   background-image: url(../img/main-bg-striped-line-cr.png);
   background-repeat: repeat-x;
   height: 14px;
+  margin: 0;
 }
 
 
@@ -25,15 +26,31 @@ body {
 }
 .page-header__logo {
   float: left;
+  padding: 10px 0;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  h1 {
+    display: inline;
+  }
 }
-.page-header__logo a {
-  text-decoration: none;
-  color: #000;
-}
-.page-header__logo h1 {
-  display: inline;
-}
+
 .page-header__nav {
   float: right;
+}
+
+.page-header__item {
   display: inline-block;
+  margin: 0 5px;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  &--button {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.6);
+  }
 }
