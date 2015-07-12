@@ -14,10 +14,11 @@ var gulp = require('gulp'),
 //    pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
+    fileinclude = require('gulp-file-include'),
     reload = browserSync.reload;
 
 //подключаем gilp-grunt
-require('gulp-grunt')(gulp);
+//require('gulp-grunt')(gulp);
 
 //создадим js объект в который пропишем все нужные нам пути, чтобы при необходимости легко в одном месте их редактировать:
 
@@ -61,11 +62,18 @@ var config = {
     open: false
 };
 
+
+var fileIncludeConfig = {
+    prefix: '@@',
+    basepath: '@file'
+};
+
 //таск для сборки html:
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
+        .pipe(fileinclude(fileIncludeConfig)) // используем fileInclude вместо rigger
+//        .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); // И перезагрузим наш сервер для обновлений
 });

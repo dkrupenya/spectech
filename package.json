@@ -3,20 +3,19 @@
   "version": "0.0.1",
   "description": "project for EpicSkills",
   "main": "gulp.js",
-  "dependencies": {
-    "gulp": "*",
-    "gulp-rigger": "^0.5.8",
-    "rimraf": "*",
-    "browser-sync": "*",
-    "gulp-watch": "^4.2.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.7.13",
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^1.0.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-include-replace": "^3.0.0",
-    "gulp-grunt": "^0.5.2"
+    "gulp": "*",
+    "gulp-file-include": "^0.13.2",
+    "gulp-grunt": "^0.5.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-watch": "^4.2.4",
+    "rimraf": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
