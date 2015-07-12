@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+@@include('blocks/head.html', {"title": "Спецтех 24, Портфолио"})
+<body>
+    <!-- Page header -->
+    @@include('blocks/header.html')
+    <hr class="hr-striped"/>
+    <!-- Section 1  banner -->
+    <section class="banner">
+        <div class="container">
+            <h2 class="banner__portfolio-header">Портфолио</h2>
+            <nav class="banner__portfolio-nav">
+                <ul>
+                    <li class="banner__portfolio-item"><a href="">Все работы</a></li>
+                    <li class="banner__portfolio-item"><a href="">Строительство</a></li>
+                    <li class="banner__portfolio-item"><a href="">Демонтаж</a></li>
+                    <li class="banner__portfolio-item"><a href="">Земляные работы</a></li>
+                    <li class="banner__portfolio-item"><a href="">Перевозка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio__item">
+            <img class="portfolio" src="img/portfolio-house1.jpg" alt=""/>
+            <div class="portfolio__item-desc">
+                <h2>Строительство жилого дома в деревушке на севере холма</h2>
+                <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и
+                    специализированных инструментов для выполнения большинства видов работ.
+                </p>
+                <a class="portfolio_btn" href="">Подробнее</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img class="portfolio" src="img/portfolio-house2.jpg" alt=""/>
+            <div class="portfolio__item-desc">
+                <h2>Строительство жилого дома в деревушке на севере холма</h2>
+                <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и
+                    специализированных инструментов для выполнения большинства видов работ.
+                </p>
+                <a class="portfolio_btn" href="">Подробнее</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img class="portfolio" src="img/portfolio-house3.jpg" alt=""/>
+            <div class="portfolio__item-desc">
+                <h2>Строительство жилого дома в деревушке на севере холма</h2>
+                <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и
+                    специализированных инструментов для выполнения большинства видов работ.
+                </p>
+                <a class="portfolio_btn" href="">Подробнее</a>
+            </div>
+        </div>
+    </section>
+    <!-- Section Form for consulting -->
+    @@include('blocks/consult-form.html')
+    <!-- Section Perks-->
+    @@include('blocks/perks.html')
+    <!-- Footer -->
+    @@include('blocks/footer.html')
+</body>
+</html>
