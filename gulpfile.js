@@ -55,7 +55,10 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Devil"
+    logPrefix: "Frontend_Devil",
+    browser: "Google Chrome",
+    files: "build/css/*.css",
+    open: false
 };
 
 //таск для сборки html:
