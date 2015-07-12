@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+@@include('blocks/head.html', {"title": "Спецтех 24, техника"})
+<body>
+    <!-- Page header -->
+    @@include('blocks/header.html')
+    <hr class="hr-striped"/>
+    <!-- Section banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner__left">
+                <h2 class="banner__header">Техника: Экскаваторы в аренду</h2>
+                <p class="banner__motto--long">Спецтех это безотказная техника, принципиально новый уровень сервиса и качества.
+                    Если вы искали идеальных партнеров на объект - Вы нашли их.
+                    Что понадобится Вам сегодня?</p>
+            </div>
+            <div class="banner__right">
+                <a class="banner__button" href="">Мне нужна консультация</a>
+                <p class="banner__button-motto">Оставьте заявку, и уже сегодня мы вам перезвоним</p>
+            </div>
+        </div>
+    </section>
+    <section class="technics">
+        <div class="container">
+            <div class="technics__item">
+                <nav class="technics__nav">
+                    <h2>Вся техника</h2>
+                    <ul>
+                        <li class="technics__type"><a href="">Гусеничные экскаваторы</a></li>
+                        <li class="technics__type technics__type--active"><a href="">Колёсные экскаваторы</a></li>
+                        <li class="technics__type"><a href="">Мини-экскаваторы</a></li>
+                        <li class="technics__type"><a href="">Автокраны</a></li>
+                        <li class="technics__type"><a href="">Фронтальные погрузчики</a></li>
+                        <li class="technics__type"><a href="">Навесное оборудование</a></li>
+                        <li class="technics__type"><a href="">Дизельгенераторы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- такой же фрагмент как в каталоге -->
+            <div class="technics__item">
+                <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
+                <img src="img/catalog-truck-big.jpg" alt=""/>
+                <p>25 000 / месяц</p>
+                <p class="special-offers__buttons">
+                    <a class="special-offers__btn--rent" href="">Арендовать</a>
+                    <a class="special-offers__btn--more-info" href="">Подробнее</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    @@include('blocks/footer.html')
+</body>
+</html>
