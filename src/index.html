@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Спецтех 24</title>
-    <!-- <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css"/> -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+@@include('blocks/head.html', {"title": "Спецтех 24"})
 <body>
-    //= _block_header.html
+    <!-- Page header -->
+    @@include('blocks/header.html')
     <hr class="hr-striped"/>
     <!-- Section 1  banner Вместе мы справимся!-->
     <section class="promo">
@@ -33,18 +28,8 @@
             </form>
         </div>
     </section>
-    <!-- Section 2 Техника проходит обязательное обслуживание-->
-    <section class="perks">
-        <div class="container">
-            <p>Техника проходит обязательное обслуживание перед каждым выездом</p>
-
-            <p>Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
-
-            <p>Привезем модные строительные ограждения к каждому заказу от 20 000</p>
-
-            <p>С техникой приедут квалифицированные операторы и водители</p>
-        </div>
-    </section>
+    <!-- Section Perks-->
+    @@include('blocks/perks.html')
     <!-- Section 3 Спецпредложения-->
     <section class="offers">
         <div class="container">
@@ -138,24 +123,6 @@
     </section>
     <hr class="hr-striped"/>
     <!-- Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="page-footer__logo">
-                <a href="/">
-                    <img src="img/main-icon-truck.svg" alt="Логотип Спецтех24"/>
-                    <h1><b>Спецтех</b>24</h1>
-                </a>
-            </div>
-            <nav class="page-footer__nav">
-                <ul>
-                    <li class="page-footer__item"><a href="">О компании</a></li>
-                    <li class="page-footer__item"><a href="">Услуги</a></li>
-                    <li class="page-footer__item"><a href="">Портофолио</a></li>
-                    <li class="page-footer__item"><a href="">Контакты</a></li>
-                    <li class="page-footer__item page-footer__item--button"><a href="">Заказать звонок</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+    @@include('blocks/footer.html', {"title": "Спецтех 24"})
 </body>
 </html>
