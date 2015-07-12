@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Спецтех24, контакты</title>
-</head>
+@@include('blocks/head.html', {"title": "Спецтех24, контакты"})
 <body>
-    <header class="page-header">
-        <a class="page-header__logo" href=""><img src="" alt=""/></a>
-        <h1><b>Спецтех</b>24</h1>
-        <nav>
-            <ul>
-                <li class="page-header__item"><a href="">О компании</a></li>
-                <li class="page-header__item"><a href="">Каталог</a></li>
-                <li class="page-header__item"><a href="">Контакты</a></li>
-                <li class="page-header__item--button"><a href="">Заказать звонок</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <header class="contacts-header">
-            <h2></h2>
-
-            <p></p>
-            <a href=""></a>
-        </header>
-        <!-- Main Section -->
-        <section class="contacts-main">
-            <div class="contacts-main__map">
-
+    <!-- Page header -->
+    @@include('blocks/header.html')
+    <hr class="hr-striped"/>
+    @@include('blocks/banner.html', {"header": "Контакты",
+                                    "motto": "Свяжитесь с нами, и все будет хорошо"})
+    <section class="contacts-form">
+        <div class="container">
+            <div class="contacts-form__map">
+                <img src="img/contacts-map-sample.jpg" alt="карта с адресом"/>
             </div>
-            <div class="contacts-main__form">
-                <h3></h3>
-                <address>
-                    <p class="contacts-main__phone"></p>
-
-                    <p class="contacts-main__email"></p>
-                </address>
-                <form action="">
-                    <input type="text"/>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <button></button>
+            <div class="contacts-form__info">
+                <p class="contacts-form__phone">+7 (812) 212 85 06</p>
+                <p class="contacts-form__mail">rent@spezteh.ru</p>
+                <form class="promo__form-form" action="">
+                    <fieldset>
+                        <legend class="promo__legend">Заказать консультацию по подобру
+                        подходящей техники:</legend>
+                        <input type="text" name="name"  placeholder="Имя" />
+                        <input type="text" name="phone" placeholder="Телефон для связи"/>
+                        <input type="text" name="task"  placeholder="Описание задачи (можно примерное)"/>
+                        <button id="consultation">Заказать консультацию</button>
+                    </fieldset>
                 </form>
             </div>
-        </section>
-        <!-- Отзывы -->
-        <section class="contacts-opinions">
-            <div><img src="" alt=""/>
 
-                <p></p>
+        </div>
+    </section>
+    <section class="they-say">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="they-say__div">
+                <img src="img/contacts-face1.png" alt=""/>
+                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                    выполняют работу быстро и еще у них отличное чувство юмора!
+                    Благодарим и рекомендуем.
+                </blockquote>
+                <cite>Оля Молния</cite>
             </div>
-            <div><img src="" alt=""/>
-
-                <p></p>
+            <div class="they-say__div">
+                <img src="img/contacts-face2.png" alt=""/>
+                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                    выполняют работу быстро и еще у них отличное чувство юмора!
+                    Благодарим и рекомендуем.
+                </blockquote>
+                <cite>Оля Молния</cite>
             </div>
-            <div><img src="" alt=""/>
-
-                <p></p>
+            <div class="they-say__div">
+                <img src="img/contacts-face3.png" alt=""/>
+                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                    выполняют работу быстро и еще у них отличное чувство юмора!
+                    Благодарим и рекомендуем.
+                </blockquote>
+                <cite>Оля Молния</cite>
             </div>
-            <div><img src="" alt=""/>
-
-                <p></p>
+            <div class="they-say__div">
+                <img src="img/contacts-face4.png" alt=""/>
+                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                    выполняют работу быстро и еще у них отличное чувство юмора!
+                    Благодарим и рекомендуем.
+                </blockquote>
+                <cite>Оля Молния</cite>
             </div>
-            <div><img src="" alt=""/>
-
-                <p></p>
-            </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
     <!-- Footer -->
-    <footer class="page-footer">
-        <a href=""><img src="" alt=""></a>
-        <h2><b></b></h2>
-        <nav class="page-footer__nav">
-            <ul>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-                <li class="page-footer__item"><a href=""></a></li>
-            </ul>
-        </nav>
-    </footer>
+    @@include('blocks/footer.html')
 </body>
 </html>
