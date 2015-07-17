@@ -20,8 +20,8 @@
     @@include('blocks/perks.html')
     <!-- Section 3 Спецпредложения-->
     <section class="offers">
-        <div class="container">
-            <div class="offers__all">
+        <div class="container row">
+            <div class="offers__all col-3">
                 <h2>Вся техника</h2>
                 <nav>
                     <ul>
@@ -35,7 +35,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="offers__spec">
+            <div class="offers__spec col-9">
                 <h2>Спецпредложение</h2>
                 <table>
                     <tr>
@@ -75,31 +75,34 @@
     <hr class="hr-striped"/>
     <!-- Section 4 Спецтех в цифрах-->
     <section class="info">
-        <div class="container">
-            <div class="info__numbers">
+        <div class="container row">
+            <div class="info__numbers col-4">
                 <h2 class="info__header"><b>Спецтех </b>в цифрах</h2>
                 <p><span class="info__span">16 </span>Лет работы</p>
                 <p><span class="info__span">715 </span>Довольных клиентов</p>
                 <p><span class="info__span">108 </span>Единиц техники</p>
                 <p><span class="info__span">500+ </span>Довольных клиентов</p>
             </div>
-            <div class="info__words">
+            <div class="info__words col-8">
                 <h2 class="info__header"><b>Нас рекомендуют клиенты</b></h2>
                 <div class="info__citation">
                     <img src="img/main-words-woman.jpg" alt=""/>
+
                     <blockquote>Спецтех24 – это надежные партнеры нашей компании,
                         которые всегда выполняют работу быстро и еще у них отличное
                         чувство юмора! Благодарим и рекомендуем.
+                        <cite>Оля Вольт, Реал-Строй</cite>
                     </blockquote>
-                    <cite>Оля Вольт, Реал-Строй</cite>
+                    
                 </div>
                 <div class="info__citation">
                     <img src="img/main-words-man.jpg" alt=""/>
                     <blockquote>Все виды работ, предусмотренные договором, компания
                         выполнила на высоком профессиональном уровне, качественно,
                         в срок, в соответствии с требованиями. ООО «ТНН» рекомендует
+                        <cite>Григорий Безымянных, ТНН</cite>
                     </blockquote>
-                    <cite>Григорий Безымянных, ТНН</cite>
+                    
                 </div>
             </div>
         </div>
@@ -107,7 +110,9 @@
     <hr class="hr-striped"/>
     <!-- Section 5 Карта-->
     <section class="map">
-        <img src="img/main-sample-map.jpg" alt=""/>
+        <div class="container">
+            <img src="img/main-sample-map.jpg" alt=""/>
+        </div>
     </section>
     <hr class="hr-striped"/>
     <!-- Footer -->

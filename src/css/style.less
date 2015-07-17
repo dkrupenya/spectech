@@ -1,4 +1,49 @@
+/* colors */
+@yellow: #fc3;
+@grey: #202e3b;
+@light-grey: #f3f3f3;
+
+/* normalize */
+@import (inline) "../../bower_components/normalize.css/normalize.css";
+
+table {
+  border-collapse: collapse;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* General styles */
+.row {
+  overflow: hidden;
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-4 {
+  width: 33.33%;
+  float: left;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-8 {
+  width: 66.66%;
+  float: left;
+}
+
+.col-9 {
+  width: 75%;
+  float: left;
+}
+
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -14,7 +59,7 @@ body {
   border: none;
   background-image: url(../img/main-bg-striped-line-cr.png);
   background-repeat: repeat-x;
-  height: 14px;
+  height: 13px;
   margin: 0;
 }
 
@@ -34,6 +79,7 @@ body {
   }
   h1 {
     display: inline;
+    font-size: 24px;
   }
 }
 
@@ -52,5 +98,152 @@ body {
   &--button {
     padding: 10px;
     background-color: rgba(255,255,255,0.6);
+  }
+}
+
+/* banner */
+.promo {
+  background: url(../img/main-banner-grey.jpg);
+  background-size: cover;
+  height: 450px;
+}
+.promo p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+.promo__header {
+  text-transform: uppercase;
+  font-size: 44px;
+
+}
+.promo__text {
+  font-size: 20px;
+}
+.promo__link {
+  text-decoration: none;
+  display: block;
+  width: 220px;
+  color: #fff;
+  padding: 10px 40px;
+  border: 2px solid @yellow;
+  margin: 0 auto;
+}
+
+/*  Consulting Form */
+.consult-form {
+  background-color: @grey;
+}
+
+/**** Perks  ******/
+.perks {
+  padding: 40px 0;
+}
+.perks p {
+  border: 1px solid #ccc; /* for testing only */
+  padding-left: 60px;
+  padding-right: 0;
+  font-size: 13px;
+}
+
+/**** Offers *****/
+.offers {
+  background-color: @light-grey;
+  overflow: hidden;
+  font-size: 16px;
+}
+.offers__all {
+
+  & ul {
+    padding: 0;
+  }
+
+  & li {
+    list-style-type: none;
+
+  }
+  & a{
+    color: @grey;
+    font-size: 16px;
+  }
+}
+.offers__spec {
+
+  & table {
+    width: 100%;
+  }
+  
+  & th {
+    background-color: #dfdfdf;
+    font-weight: bold;
+  } 
+}
+
+
+/***** Info ****/
+.info__citation {
+  .row;
+
+  & img {
+    .col-3;
+    display: block;
+    padding: 0 20px 20px 0;
+  }
+
+  & blockquote {
+    .col-9;
+    display: block;
+    margin: 0;
+
+  }
+  & cite {
+    display: block;
+  }
+
+}
+
+/**** Map *****/
+.map img {
+  width: 100%;
+}
+
+/**** Page footer ****/
+.page-footer {
+  overflow: hidden;
+  background-color: @grey;
+}
+
+.page-footer__logo {
+  float: left;
+  padding: 10px 0;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  h1 {
+    display: inline;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+.page-footer__nav {
+  float: right;
+}
+
+.page-footer__item {
+  display: inline-block;
+  margin: 0 5px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &--button a {
+    padding: 10px;
+    color: @yellow;
   }
 }
