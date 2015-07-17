@@ -1,4 +1,7 @@
+.idea
 # Created by .ignore support plugin (hsz.mobi)
 build
 node_modules
 bower_components
+spectech_subl.sublime-project
+spectech_subl.sublime-workspace
