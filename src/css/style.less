@@ -6,15 +6,17 @@
 /* normalize */
 @import (inline) "../../bower_components/normalize.css/normalize.css";
 
+/* My normalization styles */
+
 table {
   border-collapse: collapse;
 }
 
-* {
+div, p {
   box-sizing: border-box;
 }
 
-/* General styles */
+/* Grid System */
 .row {
   overflow: hidden;
 }
@@ -44,6 +46,7 @@ table {
   float: left;
 }
 
+/* General styles */
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -247,3 +250,162 @@ body {
     color: @yellow;
   }
 }
+
+/* Catalog banner */
+.banner {
+  background-image: url(../img/catalog-banner-grey.jpg);
+  background-size: cover;
+  height: 106px;
+}
+.banner__left {
+  float: left;
+  margin-top: 106/2-26/2-10px;
+}
+.banner__header {
+  font-size: 26px;
+  color: @yellow;
+  display: inline;
+  margin-right: 10px;
+}
+.banner__motto  {
+  font-size: 16px;
+  color: @light-grey;
+  display: inline;
+}
+.banner__right {
+  float: right;
+  margin-top: 106/2-45/2-10px;
+}
+.banner__button {
+  @button-height: 45px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: @yellow;
+  color: @grey;
+  width: 240px;
+  height: @button-height;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: @button-height;
+}
+
+/* Catalog tech-types */
+.tech-types {
+  background-color: @light-grey;
+}
+.tech-types .container {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.tech-types__item {
+  background-color: #fff;
+  margin: 1%;
+  width: 48%;
+  float: left;
+  font-size: 0;
+  height: 160px; //Item height
+}
+.tech-types__image-container {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  height: 160px; //Item height
+}
+.tech-types__image {
+  max-width: 100%;
+  line-height: 160px; //Item height
+}
+
+.tech-types__desc {
+  display: inline-block;
+  width: 50%;
+
+  & h3 {
+    font-size: 26px;
+    color: @grey;
+  }
+  & p {
+    font-size: 18px;
+    font-weight: bold;
+    color: darken(@yellow, 20%, relative);
+  }
+}
+/* Perks on catalog page */
+.tech-types + section {
+  background-color: @light-grey; /* hack to make it grey */
+}
+
+/* Special offers */
+.special-offers {
+  background-color: @light-grey;
+}
+.special-offers h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+.special-offers .container{
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.special-offers__offer {
+  width: 31%;
+  margin: 1%;
+  padding: 30px;
+  float: left;
+  background-color: #fff;
+  text-align: center;
+}
+.special-offers__title {
+  padding: 0;
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+}
+.special-offers__image {
+  max-width: 100%;
+}
+.special-offers__cost {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+
+  & del {
+    color: red;
+  }
+  & span {
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+.special-offers__buttons {
+  font-size: 0;
+}
+.special-offers__btn() {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  display: inline-block;
+  width: 50%;
+  line-height: 35px;
+}
+.special-offers__btn--rent {
+  .special-offers__btn;
+  background-color: @yellow;
+}
+.special-offers__btn--more-info {
+  .special-offers__btn;
+  background-color: @grey;
+}
+
+
+
+
+
+
+
+
