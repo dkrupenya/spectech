@@ -2,6 +2,7 @@
 @yellow: #fc3;
 @grey: #202e3b;
 @light-grey: #f3f3f3;
+@grey-btn: #354b60;
 
 /* normalize */
 @import (inline) "../../bower_components/normalize.css/normalize.css";
@@ -63,6 +64,16 @@ body {
   background-repeat: repeat-x;
   height: 13px;
   margin: 0;
+}
+
+/* General  Snippets*/
+.yellow-btn() {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  display: inline-block;
+  line-height: 35px;
+  background-color: @yellow;
 }
 
 
@@ -166,7 +177,7 @@ body {
 
   }
   & a{
-    color: @grey;
+    color: @grey-btn;
     font-size: 16px;
   }
 }
@@ -285,7 +296,7 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   background-color: @yellow;
-  color: @grey;
+  color: @grey-btn;
   width: 240px;
   margin-bottom: 15px;
   height: @button-height;
@@ -300,6 +311,13 @@ body {
 }
 .banner-bg-technics {
   background: url(../img/technics-banner-grey.jpg);
+}
+/* Banner for Technics page*/
+.banner__motto--long, .banner__button-motto{
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
 /* Catalog tech-types */
@@ -396,36 +414,82 @@ body {
 .special-offers__buttons {
   font-size: 0;
 }
-.special-offers__btn() {
-  text-decoration: none;
-  color: #fff;
-  font-size: 17px;
-  display: inline-block;
-  width: 50%;
-  line-height: 35px;
-}
 .special-offers__btn--rent {
-  .special-offers__btn;
+  .yellow-btn;
+  width: 50%;
   background-color: @yellow;
 }
 .special-offers__btn--more-info {
-  .special-offers__btn;
-  background-color: @grey;
+  .yellow-btn;
+  width: 50%;
+  background-color: @grey-btn;
 }
 
 /* Technics page */
-/* Banner */
-.banner__motto--long, .banner__button-motto{
-  font-size: 16px;
-  color: #fff;
-  padding: 0;
-  margin: 0;
+.technics {
+  background-color: @light-grey;
 }
+.technics .container{
+  overflow: hidden;
+}
+.technics__item {
+  .special-offers__offer;
+  height: 400px;
+  &:first-child {
+    background-color: unset;
+    padding: 0;
+    text-align: left;
+  }
+}
+.technics__nav {
+  & h2 {
+    margin: 0;
+    &:before {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/technics-truck-icon-small.svg);
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      height: 24px;
+      width: 31px;
+      margin-right: 15px;
+    }
+  }
 
+  & ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-
-
-
-
-
-
+  & li {
+    line-height: 38px;
+  }
+}
+.technics__type {
+  font-size: 16px;
+  display: inline-block;
+  color: @grey-btn;
+  &.technics__type--active {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: @yellow;
+    padding: 0 20px 0 10px;
+    margin-left: -10px;
+  }
+}
+.technics__download-btn {
+  .yellow-btn;
+  background-color: @grey-btn;
+  padding: 0 20px;
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/technics-icon-download.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 18px;
+    width: 17px;
+    margin-right: 10px;
+  }
+}
