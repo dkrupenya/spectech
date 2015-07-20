@@ -23,28 +23,33 @@ div, p {
 }
 
 .col-3 {
-  width: 25%;
+  width: 25-2%;
   float: left;
+  margin: 0 1%;
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 33.33-2%;
   float: left;
+  margin: 0 1%;
 }
 
 .col-6 {
-  width: 50%;
+  width: 50-2%;
   float: left;
+  margin: 0 1%;
 }
 
 .col-8 {
-  width: 66.66%;
+  width: 66.66-2%;
   float: left;
+  margin: 0 1%;
 }
 
 .col-9 {
-  width: 75%;
+  width: 75-2%;
   float: left;
+  margin: 0 1%;
 }
 
 /* General styles */
@@ -53,9 +58,10 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.container {
+.container {  // container can be used as .row
   max-width: 960px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hr-striped {
@@ -310,7 +316,10 @@ body {
   background: url(../img/catalog-banner-grey.jpg);
 }
 .banner-bg-technics {
-  background: url(../img/technics-banner-grey.jpg);
+   background: url(../img/technics-banner-grey.jpg);
+ }
+.banner-bg-contacts {
+  background: url(../img/contacts-banner-grey.jpg);
 }
 /* Banner for Technics page*/
 .banner__motto--long, .banner__button-motto{
@@ -326,7 +335,6 @@ body {
 }
 .tech-types .container {
   padding: 10px 0;
-  overflow: hidden;
 }
 .tech-types__item {
   background-color: #fff;
@@ -377,7 +385,6 @@ body {
 }
 .special-offers .container{
   padding: 10px 0;
-  overflow: hidden;
 }
 
 .special-offers__offer {
@@ -428,9 +435,6 @@ body {
 /* Technics page */
 .technics {
   background-color: @light-grey;
-}
-.technics .container{
-  overflow: hidden;
 }
 .technics__item {
   .special-offers__offer;
@@ -493,3 +497,89 @@ body {
     margin-right: 10px;
   }
 }
+
+/* Contacts Page */
+/* Section contacts-form */
+.contacts-form {
+  background-color: @light-grey;
+}
+.contacts-form__map {
+  .col-8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  & img {
+    max-width: 100%;
+  }
+}
+.contacts-form__info {
+  .col-4;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contacts-form__phone {
+  font-size: 18px;
+  font-weight: bold;
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/contacts-icon-phone.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+  }
+}
+.contacts-form__mail {
+  font-size: 18px;
+  font-weight: bold;
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/contacts-icon-email.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 17px;
+    width: 23px;
+    margin-right: 15px;
+  }
+}
+.contacts-form__submit {
+  .yellow-btn;
+  background-color: @grey-btn;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+/* Section they Say */
+.they-say {
+  padding: 30px 0 50px;
+}
+.they-say__title {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 1%;
+  padding: 15px 0;
+}
+.they-say__div {
+  .col-3;
+  text-align: center;
+  &  img {
+    max-width: 100%;
+  }
+  & blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: italic;
+  }
+  & cite {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+

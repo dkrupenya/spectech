@@ -6,7 +6,9 @@
     @@include('blocks/header.html')
     <hr class="hr-striped"/>
     @@include('blocks/banner.html', {"header": "Контакты",
-                                    "motto": "Свяжитесь с нами, и все будет хорошо"})
+                                    "motto": "Свяжитесь с нами, и все будет хорошо",
+                                    "background": "banner-bg-contacts"})
+    <!-- Section contacts-form -->
     <section class="contacts-form">
         <div class="container">
             <div class="contacts-form__map">
@@ -22,16 +24,17 @@
                         <input type="text" name="name"  placeholder="Имя" />
                         <input type="text" name="phone" placeholder="Телефон для связи"/>
                         <input type="text" name="task"  placeholder="Описание задачи (можно примерное)"/>
-                        <button id="consultation">Заказать консультацию</button>
+                        <button class="contacts-form__submit" id="consultation">Заказать консультацию</button>
                     </fieldset>
                 </form>
             </div>
 
         </div>
     </section>
+    <!-- Section They Say -->
     <section class="they-say">
         <div class="container">
-            <h2>Отзывы</h2>
+            <h2 class="they-say__title">Отзывы</h2>
             <div class="they-say__div">
                 <img src="img/contacts-face1.png" alt=""/>
                 <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
