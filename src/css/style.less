@@ -6,6 +6,11 @@
 
 /* normalize */
 //@import (inline) "../../bower_components/normalize.css/normalize.css";
+@import "normalize.less";
+
+/* bootstrap 3 grid */
+@import "grid.less";
+
 
 /* My normalization styles */
 
@@ -13,11 +18,14 @@ table {
   border-collapse: collapse;
 }
 
-div, p {
-  box-sizing: border-box;
-}
 
 /* Grid System */
+/*
+.container {  // container can be used as .row
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .row {
   overflow: hidden;
 }
@@ -52,16 +60,12 @@ div, p {
   margin: 0 1%;
 }
 
+*/
+
 /* General styles */
 
 body {
   font-family: "PT Sans", sans-serif;
-}
-
-.container {  // container can be used as .row
-  max-width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
 .hr-striped {
@@ -205,13 +209,13 @@ body {
   .row;
 
   & img {
-    .col-3;
+    .col-md-3;
     display: block;
     padding: 0 20px 20px 0;
   }
 
   & blockquote {
-    .col-9;
+    .col-md-9;
     display: block;
     margin: 0;
 
@@ -527,7 +531,7 @@ body {
   background-color: @light-grey;
 }
 .contacts-form__map {
-  .col-8;
+  .col-md-8;
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -536,7 +540,7 @@ body {
   }
 }
 .contacts-form__info {
-  .col-4;
+  .col-md-4;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -587,7 +591,7 @@ body {
   padding: 15px 0;
 }
 .they-say__div {
-  .col-3;
+  .col-md-3;
   text-align: center;
   &  img {
     max-width: 100%;
