@@ -10,7 +10,7 @@
     "grunt-contrib-less": "^1.0.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-include-replace": "^3.0.0",
-    "grunt-less": "^3.0.3",
+    "grunt-less": "*",
     "gulp": "*",
     "gulp-file-include": "^0.13.2",
     "gulp-grunt": "^0.5.2",
