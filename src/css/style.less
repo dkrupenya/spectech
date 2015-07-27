@@ -67,16 +67,21 @@ table {
 body {
   font-family: "PT Sans", sans-serif;
 }
+img {
+  vertical-align: middle;
+}
 
 .hr-striped {
   border: none;
   background-image: url(../img/main-bg-striped-line-cr.png);
   background-repeat: repeat-x;
+  background-position: -10px 0;
   height: 13px;
   margin: 0;
 }
 
 .mockup-overlay {
+  display: none;
   top: 0;
   position: absolute;
   z-index: -1;
@@ -96,37 +101,49 @@ body {
 
 /* Page header */
 .page-header {
-  background-color: #fc3;
-  overflow: hidden;
+  background-color: @yellow;
+
 }
 .page-header__logo {
-  float: left;
-  padding: 10px 0;
+  float:left;
+  margin: 0 4px 0 12px;
 
   a {
     text-decoration: none;
     color: #000;
   }
-  h1 {
-    display: inline;
-    font-size: 24px;
+  img {
+    position: relative;
+    top: -5px;
+    margin-right: 11px;
   }
+  h1 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0 21px;
+  }
+
 }
 
 .page-header__nav {
   float: right;
+  & ul {
+    margin: 0;
+  }
 }
 
 .page-header__item {
   display: inline-block;
-  margin: 0 5px;
+  margin: 15px 14px;
 
   a {
     text-decoration: none;
     color: #000;
+    font-size: 16px;
   }
   &--button {
-    padding: 10px;
+    padding: 12px 28px;
     background-color: rgba(255,255,255,0.6);
   }
 }
