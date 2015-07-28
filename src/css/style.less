@@ -205,17 +205,123 @@ img {
 .consult-form {
   background-color: @grey;
 }
+.consult-form .container{
+  padding: 28px 10px 40px;
+}
+.consult-form__legend {
+  font-size: 24px;
+  color: @yellow;
+  margin-bottom: 30px;
+}
+.consult-form__form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.consult-form__item {
+  width: 100%;
+  background-color: @grey;
+  border: 1px solid @yellow;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px 10px 20px;
+}
+.consult-form__item--select {
+  .consult-form__item;
+  text-align: left;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/main-icon-arrow-down-yellow.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 10px;
+    width: 20px;
+    margin-left: 35px;
+  }
+}
+.consult-form__item--button {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: @yellow;
+  color: @grey-btn;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+
 
 /**** Perks  ******/
 .perks {
-  padding: 40px 0;
+  padding: 30px 0;
 }
-.perks p {
+
+.perks__perk {
+
+  float: left;
   border: 1px solid #ccc; /* for testing only */
-  padding-left: 60px;
-  padding-right: 0;
+  padding-left: 70px;
+  padding-right: 10px;
   font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
 }
+.perks__perk--1 {
+  width: 26.5%; /* Да, это извращение, но колонки не ровные! */
+  &:before {
+    background-image: url(../img/main-icon-wrenches.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 38px;
+    width: 42px;
+    left: 10px;
+  }
+}
+.perks__perk--2 {
+  width: 26%;
+  &:before {
+    background-image: url(../img/main-icon-digger.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 38px;
+    width: 44px;
+    left: 8px;
+  }
+}
+.perks__perk--3 {
+  width: 26%;
+  &:before {
+    background-image: url(../img/main-icon-stop.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 38px;
+    width: 42px;
+    left: 10px;
+  }
+}
+.perks__perk--4 {
+  width: 21.5%;
+  padding-right: 0;
+  &:before {
+    background-image: url(../img/main-icon-worker.svg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 38px;
+    width: 30px;
+    left: 16px;
+  }
+}
+
 
 /**** Offers *****/
 .offers {

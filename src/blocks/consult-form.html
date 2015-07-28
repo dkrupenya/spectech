@@ -1,12 +1,17 @@
     <section class="consult-form">
         <div class="container">
-            <form class="promo__form" action="">
+            <form class="consult-form__form" action="">
                 <fieldset>
-                    <legend class="promo__legend">Закажите бесплатную консультацию по подбору подходящей техники</legend>
-                    <input type="text" name="name"  placeholder="Как вас зовут?" />
-                    <input type="text" name="phone" placeholder="Номер для связи"/>
-                    <input type="text" name="task"  placeholder="Выберите задачу"/>
-                    <button id="consultation">Заказать консультацию</button>
+                    <legend class="consult-form__legend">Закажите бесплатную консультацию по подбору подходящей техники</legend>
+                    <div class="row">
+                        <div class="col-md-3"><input class="consult-form__item" type="text" name="phone" placeholder="Как вас зовут?"/></div>
+                        <div class="col-md-3"><input class="consult-form__item" type="text" name="task"  placeholder="Номер для связи"/></div>
+                        <div class="col-md-3">
+                            <button class="consult-form__item--select" id="consult-form-select">Выберите задачу</button>
+                            <!-- use something like bootstrap dropdown here -->
+                        </div>
+                        <div class="col-md-3"><button class="consult-form__item--button" id="consult-form-consultation">Заказать консультацию</button></div>
+                    </div>
                 </fieldset>
             </form>
         </div>
