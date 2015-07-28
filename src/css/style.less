@@ -261,7 +261,6 @@ img {
 .perks__perk {
 
   float: left;
-  border: 1px solid #ccc; /* for testing only */
   padding-left: 70px;
   padding-right: 10px;
   font-size: 13px;
@@ -380,23 +379,63 @@ img {
 
 
 /***** Info ****/
+.info {
+  background-color: @grey;
+  color: #fff;
+  padding: 18px 0;
+}
+.info__header {
+  font-size: 26px;
+  font-weight: normal;
+}
+.info__numbers {
+  padding-left: 20px;
+  & p {
+    padding: 0;
+    line-height: 33px;
+    font-size: 18px;
+    font-weight: bold;
+    color: @light-grey;
+  }
+  & span {
+    font-size: 38px;
+    font-weight: bold;
+    color: @yellow;
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+  }
+}
 .info__citation {
-  .row;
-
+  & .col-md-3 {
+    padding: 5px 30px 32px 10px;
+  }
   & img {
-    .col-md-3;
     display: block;
-    padding: 0 20px 20px 0;
+    width: 100%;
+    border: 2px solid @yellow;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
   }
 
   & blockquote {
-    .col-md-9;
     display: block;
     margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 22px;
+    padding-left: 0;
+    margin-left: -5px;
 
   }
   & cite {
     display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    color: @yellow;
+    margin-top: 10px;
   }
 
 }
