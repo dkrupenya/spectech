@@ -75,8 +75,8 @@ img {
   border: none;
   background-image: url(../img/main-bg-striped-line-cr.png);
   background-repeat: repeat-x;
-  background-position: -10px 0;
-  height: 13px;
+  background-position: -11px 0;
+  height: 14px;
   margin: 0;
 }
 
@@ -121,7 +121,7 @@ img {
     display: inline-block;
     font-size: 24px;
     font-weight: normal;
-    margin: 20px 0 21px;
+    margin: 20px 0 16px;
   }
 
 }
@@ -135,7 +135,7 @@ img {
 
 .page-header__item {
   display: inline-block;
-  margin: 15px 14px;
+  margin: 15px 14px 14px;
 
   a {
     text-decoration: none;
@@ -152,7 +152,7 @@ img {
 .promo {
   background-image: url(../img/main-banner-grey.jpg);
   background-size: cover;
-  height: 462px;
+  height: 461px;
 }
 .promo-p() {
   text-align: center;
@@ -327,7 +327,7 @@ img {
   background-color: @light-grey;
   overflow: hidden;
   font-size: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 .offers__all {
   padding: 18px 20px;
@@ -351,7 +351,7 @@ img {
   padding: 18px 20px;
 
   & h2 {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   & table {
@@ -382,11 +382,12 @@ img {
 .info {
   background-color: @grey;
   color: #fff;
-  padding: 18px 0;
+  padding: 18px 0 21px;
 }
 .info__header {
   font-size: 26px;
   font-weight: normal;
+  margin: 20px 0 22px;
 }
 .info__numbers {
   padding-left: 20px;
@@ -408,7 +409,7 @@ img {
 }
 .info__citation {
   & .col-md-3 {
-    padding: 5px 30px 32px 10px;
+    padding: 8px 32px 32px 12px;
   }
   & img {
     display: block;
@@ -426,6 +427,7 @@ img {
     font-style: italic;
     line-height: 22px;
     padding-left: 0;
+    margin-top: 4px;
     margin-left: -5px;
 
   }
@@ -452,37 +454,28 @@ img {
 }
 
 .page-footer__logo {
-  float: left;
-  padding: 10px 0;
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  h1 {
-    display: inline;
-    color: #fff;
-    font-size: 24px;
+  .page-header__logo;
+  & h1 {
+    color: @yellow;
   }
 }
 
 .page-footer__nav {
-  float: right;
+  .page-header__nav;
 }
 
 .page-footer__item {
-  display: inline-block;
-  margin: 0 5px;
-
-  a {
-    text-decoration: none;
+  .page-header__item;
+  & a {
     color: #fff;
   }
-
-  &--button a {
-    padding: 10px;
-    color: @yellow;
+  &--button {
+    background: none;
+    & a {
+      color: @yellow;
+    }
   }
+
 }
 
 /* Catalog banner */
