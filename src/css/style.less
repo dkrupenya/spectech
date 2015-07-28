@@ -20,47 +20,56 @@ table {
 
 
 /* Grid System */
-/*
-.container {  // container can be used as .row
-  max-width: 960px;
-  margin: 0 auto;
+
+.row-grid {
   overflow: hidden;
-}
-.row {
-  overflow: hidden;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 }
 
-.col-3 {
+.grid-3 {
+  position: relative;
+  min-height: 1px;
   width: 25-2%;
   float: left;
   margin: 0 1%;
 }
 
-.col-4 {
+.grid-4 {
+  position: relative;
+  min-height: 1px;
   width: 33.33-2%;
   float: left;
   margin: 0 1%;
 }
 
-.col-6 {
+.grid-6 {
+  position: relative;
+  min-height: 1px;
   width: 50-2%;
   float: left;
   margin: 0 1%;
 }
 
-.col-8 {
+.grid-8 {
+  position: relative;
+  min-height: 1px;
   width: 66.66-2%;
   float: left;
   margin: 0 1%;
 }
 
-.col-9 {
+.grid-9 {
+  position: relative;
+  min-height: 1px;
   width: 75-2%;
   float: left;
   margin: 0 1%;
 }
 
-*/
 
 /* General styles */
 
@@ -569,88 +578,89 @@ img {
   background-color: @light-grey;
 }
 .tech-types .container {
-  padding: 10px 0;
+  padding: 10px;
 }
 .tech-types__item {
+  width: 100%;
   background-color: #fff;
-  margin: 1%;
-  width: 48%;
   float: left;
   font-size: 0;
   height: 160px; //Item height
+  margin: 10px 0;
 }
 .tech-types__image-container {
-  display: inline-block;
-  width: 50%;
   text-align: center;
-  height: 160px; //Item height
+  height: 100%;
+  line-height: 160px; //Item height
 }
 .tech-types__image {
   max-width: 100%;
-  line-height: 160px; //Item height
+  vertical-align: middle;
 }
 
 .tech-types__desc {
-  display: inline-block;
-  width: 50%;
-
   & h3 {
     font-size: 26px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 32px 0 8px;
     color: @grey;
   }
   & p {
     font-size: 18px;
     font-weight: bold;
     color: darken(@yellow, 20%, relative);
+    padding: 0;
+    margin: 0;
   }
 }
 /* Perks on catalog page */
 .tech-types + section {
   background-color: @light-grey; /* hack to make it grey */
+  padding-top: 8px;
 }
 
 /* Special offers */
 .special-offers {
   background-color: @light-grey;
 }
+.special-offers .container{
+  padding: 10px 0 50px 0;
+}
 .special-offers h2 {
   font-size: 26px;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0 20px 10px;
 }
-.special-offers .container{
-  padding: 10px 0;
-}
-
 .special-offers__offer {
-  width: 31%;
-  margin: 1%;
-  padding: 30px;
-  float: left;
+  padding: 20px 30px 35px;
   background-color: #fff;
   text-align: center;
 }
 .special-offers__title {
-  padding: 0;
-  margin: 0;
+  padding: 0 10px 0 0;
+  margin: 0 0 28px 0;
   font-size: 21px;
   font-weight: bold;
   text-align: left;
+  line-height: 27px;
 }
 .special-offers__image {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 .special-offers__cost {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
+  margin-bottom: 18px;
 
   & del {
     color: red;
+    margin-right: 16px;
   }
   & span {
     font-size: 17px;
-    font-weight: normal;
   }
 }
 .special-offers__buttons {

@@ -5,103 +5,126 @@
     <!-- Page header -->
     @@include('blocks/header.html')
     <hr class="hr-striped"/>
-    @@include('blocks/banner.html', {"header": "Каталог техники",
-                                    "motto": "Все, что нужно",
-                                    "background": "banner-bg-catalog"})
-    <section class="tech-types">
-        <div class="container">
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+    <main>
+        @@include('blocks/banner.html', {"header": "Каталог техники",
+        "motto": "Все, что нужно",
+        "background": "banner-bg-catalog"})
+        <section class="tech-types">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Гусеничные экскаваторы</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Колёсные экскаваторы</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tech-types__desc">
-                    <h3>Гусеничные экскаваторы</h3>
-                    <p>От 4 000 Р / смена</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Мини экскаваторы</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Гусеничные бульдозеры</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Фронтальные погрузчики</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tech-types__item row">
+                            <div class="tech-types__image-container col-xs-6">
+                                <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
+                            </div>
+                            <div class="tech-types__desc col-xs-6">
+                                <h3>Навесное оборудование</h3>
+                                <p>От 4 000 Р / смена</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
-                </div>
-                <div class="tech-types__desc">
-                    <h3>Гусеничные экскаваторы</h3>
-                    <p>От 4 000 Р / смена</p>
-                </div>
-            </div>
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
-                </div>
-                <div class="tech-types__desc">
-                    <h3>Фронтальные погрузчики</h3>
-                    <p>От 4 000 Р / смена</p>
-                </div>
-            </div>
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
-                </div>
-                <div class="tech-types__desc">
-                    <h3>Колесные экскаваторы</h3>
-                    <p>От 4 000 Р / смена</p>
-                </div>
-            </div>
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
-                </div>
-                <div class="tech-types__desc">
-                    <h3>Гусеничные бульдозеры</h3>
-                    <p>От 4 000 Р / смена</p>
-                </div>
-            </div>
-            <div class="tech-types__item">
-                <div class="tech-types__image-container">
-                    <img class="tech-types__image" src="img/catalog-truck-small.jpg" alt=""/>
-                </div>
-                <div class="tech-types__desc">
-                    <h3>Навесное оборудование</h3>
-                    <p>От 4 000 Р / смена</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Section Perks-->
-    @@include('blocks/perks.html')
+        </section>
 
-    <!-- Section Special offers-->
-    <section class="special-offers">
-        <div class="container">
-            <h2>Спецпредложения</h2>
-            <div class="special-offers__offer">
-                <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
-                <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
-                <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
-                <div class="special-offers__buttons">
-                    <a class="special-offers__btn--rent" href="">Арендовать</a>
-                    <a class="special-offers__btn--more-info" href="">Подробнее</a>
+        <!-- Section Perks-->
+        @@include('blocks/perks.html')
+
+        <!-- Section Special offers-->
+        <section class="special-offers">
+            <div class="container">
+                <h2>Спецпредложения</h2>
+                <div class="row-grid">
+                    <div class="special-offers__offer grid-4">
+                        <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
+                        <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
+                        <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
+                        <div class="special-offers__buttons">
+                            <a class="special-offers__btn--rent" href="">Арендовать</a>
+                            <a class="special-offers__btn--more-info" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="special-offers__offer grid-4">
+                        <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
+                        <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
+                        <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
+                        <div class="special-offers__buttons">
+                            <a class="special-offers__btn--rent" href="">Арендовать</a>
+                            <a class="special-offers__btn--more-info" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="special-offers__offer grid-4">
+                        <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
+                        <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
+                        <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
+                        <div class="special-offers__buttons">
+                            <a class="special-offers__btn--rent" href="">Арендовать</a>
+                            <a class="special-offers__btn--more-info" href="">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="special-offers__offer">
-                <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
-                <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
-                <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
-                <div class="special-offers__buttons">
-                    <a class="special-offers__btn--rent" href="">Арендовать</a>
-                    <a class="special-offers__btn--more-info" href="">Подробнее</a>
-                </div>
-            </div>
-            <div class="special-offers__offer">
-                <h3 class="special-offers__title">Колесный экскаватор Cat M315D</h3>
-                <img class="special-offers__image" src="img/catalog-truck-big.jpg" alt=""/>
-                <p class="special-offers__cost"><del>25 000</del> 25 000 <span>/ месяц</span></p>
-                <div class="special-offers__buttons">
-                    <a class="special-offers__btn--rent" href="">Арендовать</a>
-                    <a class="special-offers__btn--more-info" href="">Подробнее</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!-- Footer -->
     @@include('blocks/footer.html')
     <div class="mockup-overlay">
