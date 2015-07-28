@@ -5,70 +5,72 @@
     <!-- Page header -->
     @@include('blocks/header.html')
     <hr class="hr-striped"/>
-    @@include('blocks/banner.html', {"header": "Контакты",
-                                    "motto": "Свяжитесь с нами, и все будет хорошо",
-                                    "background": "banner-bg-contacts"})
-    <!-- Section contacts-form -->
-    <section class="contacts-form">
-        <div class="container">
-            <div class="contacts-form__map">
-                <img src="img/contacts-map-sample.jpg" alt="карта с адресом"/>
-            </div>
-            <div class="contacts-form__info">
-                <p class="contacts-form__phone">+7 (812) 212 85 06</p>
-                <p class="contacts-form__mail">rent@spezteh.ru</p>
-                <form class="promo__form-form" action="">
-                    <fieldset>
-                        <legend class="promo__legend">Заказать консультацию по подобру
-                        подходящей техники:</legend>
-                        <input type="text" name="name"  placeholder="Имя" />
-                        <input type="text" name="phone" placeholder="Телефон для связи"/>
-                        <input type="text" name="task"  placeholder="Описание задачи (можно примерное)"/>
-                        <button class="contacts-form__submit" id="consultation">Заказать консультацию</button>
-                    </fieldset>
-                </form>
-            </div>
+    <main>
+        @@include('blocks/banner.html', {"header": "Контакты",
+        "motto": "Свяжитесь с нами, и все будет хорошо",
+        "background": "banner-bg-contacts"})
+        <!-- Section contacts-form -->
+        <section class="contacts-form">
+            <div class="container row-grid">
+                <div class="contacts-form__map grid-8">
+                    <img src="img/contacts-map-sample.jpg" alt="карта с адресом"/>
+                </div>
+                <div class="contacts-form__info grid-4">
+                    <p class="contacts-form__phone">+7 (812) 212 85 06</p>
+                    <p class="contacts-form__mail">rent@spezteh.ru</p>
+                    <form class="promo-form__form" action="">
+                        <fieldset>
+                            <legend class="promo-form__legend">Заказать консультацию по подобру
+                                подходящей техники:</legend>
+                            <input class="promo-form__item" type="text" name="name"  placeholder="Имя" />
+                            <input class="promo-form__item" type="text" name="phone" placeholder="Телефон для связи"/>
+                            <textarea class="promo-form__item promo-form__textarea" name="task">Описание задачи (можно примерное)</textarea>
+                            <button class="promo-form__submit" id="consultation">Получить консультацию</button>
+                        </fieldset>
+                    </form>
+                </div>
 
-        </div>
-    </section>
-    <!-- Section They Say -->
-    <section class="they-say">
-        <div class="container">
-            <h2 class="they-say__title">Отзывы</h2>
-            <div class="they-say__div">
-                <img src="img/contacts-face1.png" alt=""/>
-                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
-                    выполняют работу быстро и еще у них отличное чувство юмора!
-                    Благодарим и рекомендуем.
-                </blockquote>
-                <cite>Оля Молния</cite>
             </div>
-            <div class="they-say__div">
-                <img src="img/contacts-face2.png" alt=""/>
-                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
-                    выполняют работу быстро и еще у них отличное чувство юмора!
-                    Благодарим и рекомендуем.
-                </blockquote>
-                <cite>Оля Молния</cite>
+        </section>
+        <!-- Section They Say -->
+        <section class="they-say">
+            <div class="container">
+                <h2 class="they-say__title">Отзывы</h2>
+                <div class="they-say__div">
+                    <img src="img/contacts-face1.png" alt=""/>
+                    <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                        выполняют работу быстро и еще у них отличное чувство юмора!
+                        Благодарим и рекомендуем.
+                    </blockquote>
+                    <cite>Оля Молния</cite>
+                </div>
+                <div class="they-say__div">
+                    <img src="img/contacts-face2.png" alt=""/>
+                    <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                        выполняют работу быстро и еще у них отличное чувство юмора!
+                        Благодарим и рекомендуем.
+                    </blockquote>
+                    <cite>Оля Молния</cite>
+                </div>
+                <div class="they-say__div">
+                    <img src="img/contacts-face3.png" alt=""/>
+                    <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                        выполняют работу быстро и еще у них отличное чувство юмора!
+                        Благодарим и рекомендуем.
+                    </blockquote>
+                    <cite>Оля Молния</cite>
+                </div>
+                <div class="they-say__div">
+                    <img src="img/contacts-face4.png" alt=""/>
+                    <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
+                        выполняют работу быстро и еще у них отличное чувство юмора!
+                        Благодарим и рекомендуем.
+                    </blockquote>
+                    <cite>Оля Молния</cite>
+                </div>
             </div>
-            <div class="they-say__div">
-                <img src="img/contacts-face3.png" alt=""/>
-                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
-                    выполняют работу быстро и еще у них отличное чувство юмора!
-                    Благодарим и рекомендуем.
-                </blockquote>
-                <cite>Оля Молния</cite>
-            </div>
-            <div class="they-say__div">
-                <img src="img/contacts-face4.png" alt=""/>
-                <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда
-                    выполняют работу быстро и еще у них отличное чувство юмора!
-                    Благодарим и рекомендуем.
-                </blockquote>
-                <cite>Оля Молния</cite>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!-- Footer -->
     @@include('blocks/footer.html')
     <div class="mockup-overlay">

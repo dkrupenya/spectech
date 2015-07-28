@@ -747,24 +747,21 @@ img {
 /* Section contacts-form */
 .contacts-form {
   background-color: @light-grey;
+  padding-bottom: 50px;
 }
 .contacts-form__map {
-  .col-md-8;
-  margin-top: 50px;
-  margin-bottom: 50px;
-
+  margin-top: 38px;
   & img {
     max-width: 100%;
   }
 }
 .contacts-form__info {
-  .col-md-4;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 16px;
 }
 .contacts-form__phone {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 14px;
   &:before {
     content: '';
     display: inline-block;
@@ -773,12 +770,15 @@ img {
     background-size: 100%;
     height: 20px;
     width: 20px;
-    margin-right: 15px;
+    margin-right: 18px;
+    position: relative;
+    top: 4px;
   }
 }
 .contacts-form__mail {
   font-size: 18px;
   font-weight: bold;
+  margin: 0 0 20px 0;
   &:before {
     content: '';
     display: inline-block;
@@ -790,12 +790,36 @@ img {
     margin-right: 15px;
   }
 }
-.contacts-form__submit {
+/* Contacts form - promo Form */
+.promo-form__form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.promo-form__legend {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.promo-form__item {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  color: #a9a9a9;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.promo-form__textarea {
+  height: 96px;
+}
+.promo-form__submit {
   .yellow-btn;
   background-color: @grey-btn;
   height: 40px;
   width: 100%;
   border: none;
+  margin-top: -5px; /*Странное пустое место перед кнопкой */
 }
 
 /* Section they Say */
