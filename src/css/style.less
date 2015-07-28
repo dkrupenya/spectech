@@ -328,8 +328,10 @@ img {
   background-color: @light-grey;
   overflow: hidden;
   font-size: 16px;
+  padding-bottom: 20px;
 }
 .offers__all {
+  padding: 18px 20px;
 
   & ul {
     padding: 0;
@@ -337,23 +339,43 @@ img {
 
   & li {
     list-style-type: none;
+    line-height: 36px;
 
   }
   & a{
     color: @grey-btn;
     font-size: 16px;
+    text-decoration: underline;
   }
 }
 .offers__spec {
+  padding: 18px 20px;
+
+  & h2 {
+    margin-bottom: 26px;
+  }
 
   & table {
     width: 100%;
+    text-align: left;
   }
   
   & th {
     background-color: #dfdfdf;
     font-weight: bold;
-  } 
+    height: 36px;
+    padding-left: 10px;
+  }
+  & td {
+    padding-left: 10px;
+    height: 36px;
+  }
+  & th:first-child, & td:first-child {
+    width: 39%;
+  }
+  & th:last-child, & td:last-child {
+    width: 24%;
+  }
 }
 
 
